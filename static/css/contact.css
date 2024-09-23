@@ -192,3 +192,11 @@
         margin: auto;
     }
 }
+@media screen and (max-width: 520px) {
+    .contact-form form{
+        grid-template-columns: 1fr;
+    }
+    .contact-form form textarea{
+        grid-column: 1/1;
+    }
+}
