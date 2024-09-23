@@ -1,0 +1,251 @@
+/* General Styles */
+#Portfolio {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    padding: 50px 0%;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header - Portfolio and My Works */
+.heading {
+    text-align: center;
+    padding: 20px;
+}
+
+.heading h3 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #888; /* Light grey color for Portfolio */
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Adds space between letters */
+}
+
+.heading h1 {
+    font-size: 32px; /* Bigger for main heading */
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.heading p {
+    font-size: 16px;
+    color: #555; /* Softer color for the description */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6; /* Better readability */
+}
+
+/* Filter Buttons */
+.filter{
+    justify-content: center;
+}
+.filter .btn-outline-success{
+    border: none;
+    color: var(--bs-dark);
+    max-width: fit-content!important;
+    padding: 0%;
+    margin: 0px 20px!important;
+    font-size: var(--desc-size);
+}
+.filter button {
+    min-width: fit-content!important;
+    margin: auto;
+    cursor: pointer;
+    font-size: 0.8em;
+    font-weight: lighter;
+    border-radius: 0px;
+    transition: all 0.3s ease;
+}
+.filter .btn-outline-success:hover{
+    background-color: #fff!important;
+    color: var(--color-secondary)!important;
+    font-weight: bold!important;
+    border-bottom: 3px var(--color-secondary) solid!important;
+    padding-left:5px ;
+    padding-right:5px ;
+}
+
+.filter .btn-outline-success.active {
+    background-color: #fff;
+    color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
+    font-weight: bold;
+    border: none;
+    border-bottom: 3px var(--color-secondary) solid!important;
+    padding-left:5px ;
+    padding-right:5px ;
+}
+
+/* Carousel */
+.carousel-p {
+    position: relative;
+    max-width: 89%;
+    margin-top: 40px;
+    margin: auto;
+    padding: 20px 0px!important;
+}
+.hidden_cont{
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    background: #000000af;
+    transition: all ease-in-out 0.5s;
+    transform: translateY(100%);
+}
+
+.active_h_c{
+    transform: translateY(0%);
+    transition: all ease-in-out 0.5s;
+}
+
+.blur-pic{
+    filter: blur(5px);
+    scale: 1.2;
+    transition: all ease-in-out 0.5s;
+}
+.carousel-wrapper-p {
+    display: grid;
+    position: relative;
+}
+.carousel-items-p {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    overflow-x: scroll;
+    /* overflow: hidden; */
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar with box shadow */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 3px;
+    }
+    
+::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background: var(--color-secondary);
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bs-dark);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-track:hover{
+    height: 10px;
+}
+
+.carousel-item-p {
+    z-index: 2;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow:  0px 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    margin-right: 20px; /* Add some space between items */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    animation-name: card_popup;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+.carousel-item-p:hover .carousel-item-p img{
+    transform: scale(1.2);
+}
+
+@keyframes card_popup {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.carousel-item-p .img_inner{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.carousel-item-p img {
+    width: 100%;
+    margin: auto;
+    transition: all ease-in-out 0.5s;
+}
+
+.carousel-item-p h2 {
+    padding: 0px 10px;
+    margin-bottom: 10px;
+}
+
+.carousel-item-p p{
+    padding: 0px 10px;
+}
+
+/* Carousel Btn */
+.carousel-btn-l{
+    position: absolute;
+    top: calc(50% - 32px);
+    left: -10px;
+}
+.carousel-btn-l i::before{
+    background-color: #fff;
+    border-radius: 50%;
+}
+.carousel-btn-r{
+    position: absolute;
+    top: calc(50% - 32px);
+    right: -10px;
+}
+.carousel-btn-r i::before{
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+
+/* GitHub Circular Icon (Smaller) */
+.github-icon {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.github-icon i {
+    vertical-align: middle;
+}
+
+.github-icon:hover {
+    background-color: #333;
+    color: white;
+}

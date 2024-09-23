@@ -1,0 +1,45 @@
+
+.container-e {
+    display: flex;
+    justify-content: space-between; /* Adds gap between boxes */
+    padding: 80px 50px;
+    padding-bottom: 0px;
+    margin: 0 auto; /* Centers the container on the page */
+    height: fit-content;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    text-align: center;
+    background-color: white; /* Box background color */
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s;
+    margin: 0 10px; /* Slight gap between boxes */
+    border: 1px #000 solid;
+    min-width: 250px;
+    margin: auto;
+}
+
+.service-box:hover {
+    transform: translateY(-5px); /* Small upward movement on hover */
+}
+
+.service-box h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: var(--bs-dark)!important;
+}
+
+.service-box p {
+    color: #666;
+    font-size: 14px;
+}
+
+.icon {
+    font-size: 40px;
+    color: #c87e6d;
+    margin-bottom: 15px;
+}

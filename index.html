@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div id="main_cont">
+        <div class="navbar" id="Main_navbar">
+            <div class="container" id="inner_navbar">
+                <div id="Main_Header" class="header">Sharif.</div>
+                <div id="items_list" class="d-flex">
+                    <a href="#Home" class="item ms-2">home</a>
+                    <a href="#About" class="item ms-2">about</a>
+                    <a href="#Portfolio" class="item ms-2">Portfolio</a>
+                    <a href="#Skill" class="item ms-2">skill</a>
+                    <a href="#services" class="item ms-2">services</a>
+                    <a href="#blog" class="item ms-2">blog</a>
+                    <a href="#contact" class="item ms-2">contact</a>
+                </div>
+                <i class="bi bi-list" id="nav-btn"></i>
+            </div>
+        </div>
+        <section id="Home" class="section-1 container-md"  data-aos="zoom-in" data-aos-duration="1000">
+            <div class="hero-content">
+                <h2 class="greeting font-title">Hello, I’m</h2>
+                <div class="name font-header">Sharif Mohammad Sowrov</div>
+                <h3 class="profession">A <span class="highlight">Creative Designer</span> From <span class="location">[Your City]</span></h3>
+                <p class="description font-desc-2">I'm a creative designer based in Dhaka,Bangladesh, and I'm very passionate and dedicated to my work.</p>
+                <a href="#contact" id="hero-btn" class="btn btn-outline-danger text-capitalize fs-6 fw-bold font-title px-5">Hire Me</a>
+                <div class="social-links">
+                    <a class="ms-0" href="https://www.facebook.com"><i class="bi bi-facebook"></i></a>
+                    <a class="ms-3" href="#"><i class="bi bi-github"></i></a>
+                    <a class="ms-3" href="#"><i class="bi bi-linkedin"></i></a>
+                    <a class="ms-3" href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="./static/img/bg-1.svg" width="400px" alt="Your Image">
+            </div>
+        </section>
+        <section class="container">
+            <div class="container-e" id="Experties">
+                <div class="service-box"  data-aos="fade-right" data-aos-duration="500" data-aos-delay="100">
+                    <div class="icon"><i class="bi bi-border-style text-dark"></i></div> <!-- Replace with appropriate icon if available -->
+                    <h3 class="font-title">Brand Design</h3>
+                    <p class="font-desc-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                </div>
+                <div class="service-box"  data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100">
+                    <div class="icon"><i class="bi bi-badge-ad-fill text-dark"></i></div> <!-- Replace with appropriate icon if available -->
+                    <h3 class="font-title">Seo & Marketing</h3>
+                    <p class="font-desc-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                </div>
+                <div class="service-box"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="100">
+                    <div class="icon"><i class="bi bi-pencil text-dark"></i></div> <!-- Replace with appropriate icon if available -->
+                    <h3 class="font-title">Creative Design</h3>
+                    <p class="font-desc-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                </div>
+            </div>   
+        </section>
+        <section id="About" class="section-2">
+            <div class="about-section pt-8 container" >
+                <div class="about-image" data-aos="fade-left">
+                    <img src="./static/img/bg-1.svg" alt="About Me Image">
+                </div>
+                <div class="about-content" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                    <h2 class="font-title">I’m a Designer</h2>
+                    <h1 class="font-header">Write About Me</h1>
+                    <p class="font-desc-2">Hello there! I'm a web designer, and I'm very passionate and dedicated to my work. With 20 years of experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion to collaboration.</p>
+                    <a href="#" class="download-cv-button helvetica">Download CV</a>
+                </div>
+            </div>
+        </section>
+        <section id="Portfolio" class="container m-auto my-5"  data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="100">
+            <div>
+                <header>
+                    <div class="heading">
+                        <h3 class="font-title text-capitalize text-secoundary">Portfolio</h3>
+                        <h1 class="font-header">My Works</h1>
+                        <p class="font-desc-2">Here are some of the projects I've worked on, showcasing my skills in web development and design. Feel free to explore and check out the details by clicking on the GitHub icons for each project.</p>
+                    </div>
+                    <div class="filter row">
+                        <button class="col-1 m-1 btn-filter btn btn-outline-success active" data-filter="all">All</button>
+                        <button class="col-1 m-1 btn-filter btn btn-outline-success" data-filter="html">HTML</button>
+                        <button class="col-1 m-1 btn-filter btn btn-outline-success" data-filter="css">CSS</button>
+                        <button class="col-1 m-1 btn-filter btn btn-outline-success" data-filter="javascript">JavaScript</button>
+                        <button class="col-1 m-1 btn-filter btn btn-outline-success" data-filter="nodejs">NodeJS</button>
+                        <button class="col-1 m-1 btn-filter btn btn-outline-success" data-filter="wordpress">WordPress</button>
+                        <button class="col-1 m-1 btn-filter btn btn-outline-success" data-filter="psd">PSD</button>
+                        <button class="col-1 m-1 btn-filter btn btn-outline-success" data-filter="pug">PUG</button>
+                    </div>
+                </header>
+        
+                <!-- Carousel Container -->
+                <section class="carousel-p">
+                    <div class="carousel-wrapper-p">
+                        <div class="carousel-items-p" style="transform: translateX(-0px);">
+                            <div class="carousel-item-p" data-category="html">
+                                <div class="img_inner">
+                                    <img src="/static/img/blog3.jpg" alt="Tomas George Project">
+                                    <a href="www.github.com" class="hidden_cont"><i class="bi bi-github fs-6">&ThinSpace; Github Projects</i></a>
+                                </div>
+                                <h2 class="font-title">Tomas George</h2>
+                                <p class="font-desc-2">Learn the basics of Library music marketing.</p>
+                            </div>
+                            <div class="carousel-item-p" data-category="javascript">
+                                <div class="img_inner">
+                                    <img src="/static/img/blog3.jpg" alt="Tomas George Project">
+                                    <a href="www.github.com" class="hidden_cont"><i class="bi bi-github fs-6">&ThinSpace; Github Projects</i></a>
+                                </div>
+                                <h2 class="font-title">Contact List App</h2>
+                                <p class="font-desc-2">Modern web-based app for managing contacts.</p>
+                            </div>
+                            <div class="carousel-item-p" data-category="javascript">
+                                <div class="img_inner">
+                                    <img src="/static/img/blog3.jpg" alt="Tomas George Project">
+                                    <a href="www.github.com" class="hidden_cont"><i class="bi bi-github fs-6">&ThinSpace; Github Projects</i></a>
+                                </div>
+                                <h2 class="font-title">Contact List App</h2>
+                                <p class="font-desc-2">Modern web-based app for managing contacts.</p>
+                            </div>
+                            <div class="carousel-item-p" data-category="javascript">
+                                <div class="img_inner">
+                                    <img src="/static/img/blog3.jpg" alt="Tomas George Project">
+                                    <a href="www.github.com" class="hidden_cont"><i class="bi bi-github fs-6">&ThinSpace; Github Projects</i></a>
+                                </div>
+                                <h2 class="font-title">Contact List App</h2>
+                                <p class="font-desc-2">Modern web-based app for managing contacts.</p>
+                            </div>
+                            <div class="carousel-item-p" data-category="css">
+                                <div class="img_inner">
+                                    <img src="/static/img/blog3.jpg" alt="Tomas George Project">
+                                    <a href="www.github.com" class="hidden_cont"><i class="bi bi-github fs-6">&ThinSpace; Github Projects</i></a>
+                                </div>
+                                <h2 class="font-title">Space Invaders</h2>
+                                <p class="font-desc-2">Simplified web version of Space Invaders.</p>
+                            </div>
+                            <div class="carousel-item-p" data-category="nodejs">
+                                <div class="img_inner">
+                                    <img src="/static/img/blog3.jpg" alt="Tomas George Project">
+                                    <a href="www.github.com" class="hidden_cont"><i class="bi bi-github fs-6">&ThinSpace; Github Projects</i></a>
+                                </div>
+                                <h2 class="font-title">NodeJS Project</h2>
+                                <p class="font-desc-2">NodeJS application for server-side scripting.</p>
+                            </div>
+                            <div class="carousel-item-p" data-category="wordpress">
+                                <div class="img_inner">
+                                    <img src="/static/img/blog3.jpg" alt="Tomas George Project">
+                                    <a href="www.github.com" class="hidden_cont"><i class="bi bi-github fs-6">&ThinSpace; Github Projects</i></a>
+                                </div>
+                                <h2 class="font-title">WordPress Theme</h2>
+                                <p class="font-desc-2">Custom WordPress theme development.</p>
+                            </div>
+                            <div class="carousel-item-p" data-category="psd">
+                                <div class="img_inner">
+                                    <img src="/static/img/blog3.jpg" alt="Tomas George Project">
+                                    <a href="www.github.com" class="hidden_cont"><i class="bi bi-github fs-6">&ThinSpace; Github Projects</i></a>
+                                </div>
+                                <h2 class="font-title">PSD Design</h2>
+                                <p class="font-desc-2">Designs created in Adobe Photoshop.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-btn-l">
+                        <i class="bi bi-arrow-left-circle-fill text-dark fs-3"></i>
+                    </div>
+                    <div class="carousel-btn-r">
+                        <i class="bi bi-arrow-right-circle-fill text-dark fs-3"></i>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section id="Skill" class="container my-5">
+            <div class="text-section"  data-aos="fade-left" data-aos-duration="300" data-aos-delay="100">
+                <h4 class="font-title">Design is Life</h4>
+                <h1 class="font-header">I Develop Skills Regularly to Keep Me Update</h1>
+                <p class="font-desc-2">Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
+                <div class="skills">
+                    <div class="skill">
+                        <div class="skill-title">
+                            <span>Illustrator</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar illustrator"  data-aos="fade-right" data-aos-duration="600" data-aos-delay="300"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title">
+                            <span>Photoshop</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar photoshop" data-aos="fade-right" data-aos-duration="600" data-aos-delay="300"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title">
+                            <span>Figma</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar figma" data-aos-offset="0" data-aos="fade-right" data-aos-duration="600" data-aos-delay="300"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-section" data-aos="fade-right" data-aos-duration="300" data-aos-delay="100">
+                <img src="./static/img/img_4.jpg" alt="Design Image">
+            </div>
+        </div>
+        <section id="services" class="section-3 container m-auto"  data-aos="flip-right" data-aos-duration="600" data-aos-delay="100">
+            <h2 class="section-title font-title text-secoundary">Services</h2>
+            <h1 class="main-title font-header">What I Do for Clients</h1>
+            <p class="section-description text-center font-desc-2">Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
+            <div class="services-cards">
+                <div class="service-card">
+                    <div class="icon-wrapper">
+                        <i class="bi bi-pencil fs-1"></i>
+                    </div>
+                    <h3 class="card-title font-title">Creative Design</h3>
+                    <p class="price helvetica">Starts from <span>$99</span></p>
+                    <p class="card-description font-desc-2">Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-wrapper">
+                        <i class="bi bi-pencil fs-1"></i>
+                    </div>
+                    <h3 class="card-title font-title">Graphic Design</h3>
+                    <p class="price helvetica">Starts from <span>$199</span></p>
+                    <p class="card-description font-desc-2">Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-wrapper">
+                        <i class="bi bi-pencil fs-1"></i>
+                    </div>
+                    <h3 class="card-title font-title">UI/UX Design</h3>
+                    <p class="price helvetica">Starts from <span>$299</span></p>
+                    <p class="card-description font-desc-2">Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-wrapper">
+                        <i class="bi bi-pencil fs-1"></i>
+                    </div>
+                    <h3 class="card-title font-title">Web Design</h3>
+                    <p class="price helvetica">Starts from <span>$399</span></p>
+                    <p class="card-description font-desc-2">Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development.</p>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials-section"  data-aos="flip-left" data-aos-duration="600" data-aos-delay="100">
+            <h2 class="section-title font-title">Testimonials</h2>
+            <h1 class="main-title font-headers">What My Clients Say</h1>
+            <p class="section-description font-desc-2">See what my clients have to say about the quality of work and services I provide.</p>
+            <div id="carouselInterval" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators" style="list-style-type: none;">
+                    <li data-bs-target="#carouselInterval" data-bs-slide-to="0" class="chng-circle bg-dark active"></li>
+                    <li data-bs-target="#carouselInterval" data-bs-slide-to="1" class="chng-circle bg-dark "></li>
+                    <li data-bs-target="#carouselInterval" data-bs-slide-to="2" class="chng-circle bg-dark "></li>
+                  </ol>
+                <div class="carousel-inner pb-3">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="testimonial">
+                        <p class="quote font-desc-2">“Working with this team has been a pleasure from start to finish. Their attention to detail, ability to listen to our needs, and deliver exactly what we envisioned was outstanding. I couldn't be happier with the results and highly recommend their services.”</p>
+                        <div class="client-info">
+                            <img src="https://via.placeholder.com/50" alt="Client Photo">
+                            <div class="text-start">
+                                <span class="client-name">John Doe</span>
+                                <br>
+                                <span class="client-company">XYZ Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <div class="testimonial">
+                        <p class="quote font-desc-2">“Working with this team has been a pleasure from start to finish. Their attention to detail, ability to listen to our needs, and deliver exactly what we envisioned was outstanding. I couldn't be happier with the results and highly recommend their services.”</p>
+                        <div class="client-info">
+                            <img src="https://via.placeholder.com/50" alt="Client Photo">
+                            <div class="text-start">
+                                <span class="client-name">Kan Helal</span>
+                                <br>
+                                <span class="client-company">ABS Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="testimonial">
+                        <p class="quote font-desc-2">“Working with this team has been a pleasure from start to finish. Their attention to detail, ability to listen to our needs, and deliver exactly what we envisioned was outstanding. I couldn't be happier with the results and highly recommend their services.”</p>
+                        <div class="client-info">
+                            <img src="https://via.placeholder.com/50" alt="Client Photo">
+                            <div class="text-start">
+                                <span class="client-name">John Kent</span>
+                                <br>
+                                <span class="client-company">ASDF Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev d-none" type="button" data-bs-target="#carouselInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next d-none" type="button" data-bs-target="#carouselInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                </button>
+              </div>              
+        </section>
+        <section class="section-4 container m-auto" id="blog"  data-aos="zoom-out-right" data-aos-duration="600" data-aos-delay="100">
+            <h2 class="section-title font-title">From My Blog</h2>
+            <h1 class="main-title font-header">Our Recent Updates, Blog, Tips, Tricks & More</h1>
+            <div class="blog-cards">
+                <div class="blog-card">
+                    <img src="./static/img/blog1.jpg" alt="Web Development">
+                    <div class="card-date helvetica">23 Dec</div>
+                    <div class="card-content">
+                        <h3 class="card-category font-title">Web Development</h3>
+                        <p class="card-title font-desc-2">Jim Morisson Says when the music's over turn off the light</p>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="/static/img/blog2.jpg" alt="Branding">
+                    <div class="card-date helvetica">23 Dec</div>
+                    <div class="card-content">
+                        <h3 class="card-category font-title">Branding</h3>
+                        <p class="card-title font-desc-2">How to be appreciated for your hard work as a developer</p>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="/static/img/blog3.jpg" alt="Social Media">
+                    <div class="card-date helvetica">23 Dec</div>
+                    <div class="card-content">
+                        <h3 class="card-category font-title">Social Media</h3>
+                        <p class="card-title font-desc-2">How designers and developers can collaborate better</p>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+        <!-- Newsletter Subscription Section -->
+        <section class="newsletter-section container my-5"  data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title font-title">Get My Newsletter</h2>
+                <p class="newsletter-description font-desc-2">Get latest news, updates, tips and tricks in your inbox</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email here" required>
+                    <button type="submit" class="newsletter-submit-btn helvetica">Send Now</button>
+                </form>
+            </div>
+        </section>
+        <section id="section-5" class="section-5 container">
+            <div class="container">
+        
+                <!-- Contact Form Section -->
+                <section id="contact" class="contact-section" >
+                    <div class="contact-header">
+                        <p class="contact-subtitle font-title">Contact Me</p>
+                        <h2 class="contact-title font-header">I Want To Hear From You</h2>
+                        <p class="contact-description font-desc-2">Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday</p>
+                    </div>
+                    <div class="contact-grid container">
+                        <div class="contact-info">
+                            <div class="contact-item"  data-aos="fade-right" data-aos-duration="600" data-aos-delay="100">
+                                <div class="d-flex">
+                                    <div class="d-flex">
+                                        <i class="bi bi-geo-alt-fill fs-4 ms-5 me-3 my-auto"></i>
+                                    </div>
+                                    <div>                                    
+                                        <div class="contact-label m-0 helvetica">Address</div>
+                                        <div class="contact-detail m-0 font-desc-2">20, Somewhere in world</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-item" data-aos="fade-right" data-aos-duration="600" data-aos-delay="300">
+                                <div class="d-flex">
+                                    <div class="d-flex">
+                                        <i class="bi bi-envelope-fill fs-4 ms-5 me-3 my-auto"></i>
+                                    </div>
+                                    <div>
+                                        <div class="contact-label m-0 helvetica">Email</div>
+                                        <div class="contact-detail m-0 font-desc-2">hello@dizme.com</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-item"  data-aos="fade-right" data-aos-duration="600" data-aos-delay="500">
+                                <div class="d-flex">
+                                    <div class="d-flex">
+                                        <i class="bi bi-telephone fs-3 fs-4 ms-5 me-3 my-auto"></i>
+                                    </div>
+                                    <div>
+                                        <div class="contact-label m-0 helvetica">Phone</div>
+                                        <div class="contact-detail m-0 font-desc-2">+123 456 7890</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-form" data-aos="fade-left" data-aos-duration="600" data-aos-delay="600">
+                            <form >
+                                <input type="text" placeholder="Your Name" required>
+                                <input type="email" placeholder="Your Email" required>
+                                <input type="text" placeholder="Your Phone" required>
+                                <input type="text" placeholder="Subject" required>
+                                <textarea placeholder="Write your message here" required></textarea>
+                                <button class="helvetica" type="submit">Submit Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        
+        </section>
+    </div>
+    <div id="Main_Footer" class="pt-5">
+        <div class="container">
+            <div class="col-12 font-header helvetica pb-3">Sharif.</div>
+            <div class="row pb-5" id="Footer_nav">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <a href="#" class="col-lg-3 text-decoration-none text-dark mb-3 col-6 footer-link">Website</a>
+                        <a href="#" class="col-lg-3 text-decoration-none text-dark mb-3 col-6 footer-link">Collections</a>
+                        <a href="#" class="col-lg-3 text-decoration-none text-dark mb-3 col-6 footer-link">Elements</a>
+                        <a href="#" class="col-lg-3 text-decoration-none text-dark mb-3 col-6 footer-link">Academy</a>
+                        <a href="#" class="col-lg-3 text-decoration-none text-dark mb-3 col-6 footer-link">Jobs</a>
+                        <a href="#" class="col-lg-3 text-decoration-none text-dark mb-3 col-6 footer-link">Market</a>
+                        <a href="#" class="col-lg-3 text-decoration-none text-dark mb-3 col-6 footer-link">2nd Website</a>
+                        <a href="#" class="col-lg-3 text-decoration-none text-dark mb-3 col-6 footer-link">2nd Collections</a>
+                        <a href="#" class="col-lg-3 text-decoration-none text-dark mb-3 col-6 footer-link">2nd Elements</a>
+                        <a href="#" class="col-lg-3 text-decoration-none text-dark mb-3 col-6 footer-link">2nd Academy</a>
+                        <a href="#" class="col-lg-3 text-decoration-none text-dark mb-3 col-6 footer-link">2nd Jobs</a>
+                        <a href="#" class="col-lg-3 text-decoration-none text-dark mb-3 col-6 footer-link">2nd Market</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 d-flex">
+                    <div class="my-auto"><sub>"CreatedBy"</sub><span  class="font-header helvetica">NHL</span>.</div>
+                </div>
+            </div>
+            <div class="hr pb-4"></div>
+            <div class="row pb-5 pt-3" id="Terms_&_Policy">
+                <div class="col-xl-4">
+                    <a href="#" class="ms-2 text-decoration-none w-fit-content text-dark font-desc-2 fs-sm footer-link">Cookies Policy</a>
+                    <a href="#" class="ms-2 text-decoration-none w-fit-content text-dark font-desc-2 fs-sm footer-link">Legal Terms</a>
+                    <a href="#" class="ms-2 text-decoration-none w-fit-content text-dark font-desc-2 fs-sm footer-link">Privacy Policy</a>
+                </div>
+                <div class="col-xl-8 d-flex part-2" style="flex-wrap: wrap ;">
+                    <span class="ms-2 text-decoration-none m-auto w-fit-content  fw-bold text-dark helvetica">Connect:</span>
+                    <a href="#" class="ms-2 text-decoration-none m-auto w-fit-content footer-link  text-dark font-desc-2">Instagram</a>
+                    <a href="#" class="ms-2 text-decoration-none m-auto w-fit-content footer-link  text-dark font-desc-2">Linkedin</a>
+                    <a href="#" class="ms-2 text-decoration-none m-auto w-fit-content footer-link  text-dark font-desc-2">Facebook</a>
+                    <a href="#" class="ms-2 text-decoration-none m-auto w-fit-content footer-link  text-dark font-desc-2">Youtube</a>
+                    <a href="#" class="ms-2 text-decoration-none m-auto w-fit-content footer-link  text-dark font-desc-2">Github</a>
+                    <a href="#" class="ms-2 text-decoration-none m-auto w-fit-content footer-link  text-dark font-desc-2">Pinterest</a>
+                    <a href="#" class="ms-2 text-decoration-none m-auto w-fit-content footer-link  text-dark font-desc-2">ETC</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="./static/js/main.js"></script>
+    <script src="./static/js/smooth_scroll.js"></script>
+    <script src="./static/js/portfolio.js"></script>
+</body>
+</html>
