@@ -46,7 +46,7 @@
     border: none;
     border-radius: 5px 0 0 5px;
     min-width: 250px;
-    width: 400px;
+    width: 50%;
 }
 
 .newsletter-form button {
