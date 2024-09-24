@@ -81,6 +81,8 @@ body{
     font-family: sans-serif;
     margin: auto;
     background-color: #ece7e7!important;
+    overflow-x: hidden;
+    overflow-x: clip !important;
 }
 /* Navbar  */
 #Main_navbar{
@@ -134,7 +136,9 @@ body{
     background-color: #ece7e7;
 }
 /* Section-1 Introduction */
-
+html{
+    overflow-x: hidden;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
