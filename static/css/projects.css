@@ -141,7 +141,7 @@
     
 ::-webkit-scrollbar-track {
     border-radius: 3px;
-    background: var(--color-secondary);
+    background: #ffffff;
     height: 5px;
 }
 
