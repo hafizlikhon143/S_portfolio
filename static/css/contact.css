@@ -149,7 +149,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    width: 300px;
+    /* max-width: 300px; */
 }
 .contact-form form textarea{
     grid-column: 1/ span 2;
@@ -181,7 +181,9 @@
 .contact-form button:hover {
     background-color: #d55436;
 }
-
+@media screen and (max-width:998px) {
+    
+}
 @media screen and (max-width: 768px) {
     .contact-grid{
         grid-template-columns: 1fr;
