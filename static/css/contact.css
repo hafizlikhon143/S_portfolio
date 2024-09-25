@@ -149,7 +149,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    /* max-width: 300px; */
 }
 .contact-form form textarea{
     grid-column: 1/ span 2;
@@ -163,6 +162,7 @@
     border-radius: 5px;
     font-size: 12px;
     outline: 1px #969696dc solid!important;
+    /* width: 200px; */
 }
 
 .contact-form button {
@@ -182,7 +182,9 @@
     background-color: #d55436;
 }
 @media screen and (max-width:998px) {
-    
+    .contact-form form{
+        grid-template-columns: repeat(2, 150px);
+    }
 }
 @media screen and (max-width: 768px) {
     .contact-grid{
